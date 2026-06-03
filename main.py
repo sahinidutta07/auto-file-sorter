@@ -10,6 +10,9 @@ for file in os.listdir(folder):
 
         if file.endswith((".jpg", ".png", ".jpeg")):
             destination = os.path.join(folder, "Images")
+            
+        elif file.endswith((".mp4", ".avi", ".mkv")):
+            destination = os.path.join(folder, "Videos")
 
         elif file.endswith((".pdf", ".txt", ".docx")):
             destination = os.path.join(folder, "Documents")
